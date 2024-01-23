@@ -1,3 +1,7 @@
+/*
+ * @Author: hanshuai
+ * @Date: 2024-01-19 17:24:02
+ */
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import * as bodyParser from 'body-parser';
@@ -35,7 +39,7 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
 
   await app.listen(app.get('ConfigService').get('SERVER_PORT', 3003));
-  console.log('[wipi] 服务启动成功');
+  console.log('[wipi] 服务启动成功 yes');
 }
 
 bootstrap();
