@@ -73,9 +73,7 @@ export const Header = ({ setting, tags, pages, hasBg = false }) => {
   const navMenu = NAV_LINKS.map((nav) => (
     <li key={nav.path} className={cls({ [style.active]: asPath === nav.path })}>
       <Link href={nav.path}>
-        <a aria-label={nav.locale}>
-          <span>{t(nav.locale)}</span>
-        </a>
+        <a aria-label={nav.locale}>{/* <span>{t(nav.locale)}</span> */}</a>
       </Link>
     </li>
   ));
