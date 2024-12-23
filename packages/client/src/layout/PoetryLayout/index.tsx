@@ -1,5 +1,5 @@
 import { Footer } from '@components/Footer';
-import { Header } from '@components/Header';
+import { Header } from '@components/Poetry/Header';
 import { BackTop } from 'antd';
 import cls from 'classnames';
 import React, { useContext, useEffect, useMemo, useRef } from 'react';
@@ -25,7 +25,7 @@ interface IProps {
   showComment?: boolean;
 }
 
-export const DoubleColumnLayout: React.FC<IProps> = ({
+export const PoetryLayout: React.FC<IProps> = ({
   leftNode,
   leftClassName = null,
   rightNode,
@@ -98,7 +98,7 @@ export const DoubleColumnLayout: React.FC<IProps> = ({
     <div className={cls(style.outerWrap)} style={{ minHeight }}>
       <Seo />
       <Header setting={setting} tags={tags} pages={pages} hasBg={customBg} />
-      <div className={cls('container')}>
+      <div className={cls('poetry-container ')}>
         <div className={style.wrap}>
           {(likesProps || showComment) && (
             <div
@@ -110,11 +110,11 @@ export const DoubleColumnLayout: React.FC<IProps> = ({
                 e.stopPropagation();
               }}
             >
-              {likesProps && (
+              {/* {likesProps && (
                 <div className={style.widgetWrapper}>
                   <Likes {...likesProps} />
                 </div>
-              )}
+              )} */}
               {showComment && (
                 <div className={style.widgetWrapper}>
                   <CommentIcon />
@@ -133,8 +133,6 @@ export const DoubleColumnLayout: React.FC<IProps> = ({
         </div>
       </div>
       {systemBg && !hasBg && <div className={style.bg} style={{ backgroundImage: bg }}></div>}
-      <BackTop />
-      {needFooter && <Footer setting={setting} hasBg={customBg} />}
     </div>
   );
 };

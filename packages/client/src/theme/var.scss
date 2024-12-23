@@ -22,6 +22,27 @@ body {
   --comment-editor-disable-bg: #f5f5f5; // 评论框所用编辑器按钮禁用背景色
   --global-bg-opacoty: 0.75;
 
+  // 古诗文网
+  --gs-primary-color: #5d6146;
+  --gs-sun-color: #eec413;
+  --gs-link-color: #19537d;
+  --gs-border-radius: 2px;
+  --gs-bg: #e1e0c7;
+  --gs-bg-second: #f0efe2;
+  --gs-bg-body: #f0efe2;
+  --gs-bg-footer: #292525;
+  --gs-bg-code: #f8f8f8;
+  --gs-blockquote-color: #ffffff;
+  --gs-main-text-color: #5d6146;
+  --gs-second-text-color: rgba(0, 0, 0, 0.65);
+  --gs-disable-text-color: rgba(0, 0, 0, 0.35);
+  --gs-border-color: #e5e6eb;
+  --gs-box-shadow: 0 1px 3px rgb(18 18 18 / 10%);
+  --gs-scrollbar-bg: #dadada;
+  --gs-comment-editor-border-color: #d9d9d9; // 评论框所用编辑器边框颜色
+  --gs-comment-editor-disable-bg: #f5f5f5; // 评论框所用编辑器按钮禁用背景色
+  --gs-global-bg-opacoty: 0.75;
+
   img {
     opacity: 1;
   }

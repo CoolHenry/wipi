@@ -64,6 +64,11 @@ iframe {
   margin-left: auto;
 }
 
+.poetry-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100%;
@@ -87,6 +92,9 @@ iframe {
 @media (min-width: 1200px) {
   .container {
     width: 1140px;
+  }
+  .poetry-container {
+    width: 1200px;
   }
 }
 

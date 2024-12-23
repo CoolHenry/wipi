@@ -1,0 +1,84 @@
+.wrapper {
+  position: relative;
+  height: auto;
+  padding: 5px 20px;
+  clear: both;
+  background-color: #f0efe2;
+  color: #0f0f0f;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 5px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    clear: both;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #dad9d1;
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .abbreviateCont {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .abbreviate {
+        font-size: 12px;
+        color: rgb(25, 83, 125);
+        &_active {
+          font-size: 12px;
+          color: rgb(153, 153, 153);
+        }
+        &_line {
+          font-size: 10px;
+          color: rgb(153, 153, 153);
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+  .cont {
+    .sec {
+      max-height: 1.9rem;
+      overflow: hidden;
+      display: flex;
+      align-items: start;
+      margin-top: 0.7rem;
+      border-bottom: 1px dashed #dad9d1;
+      transition: max-height 0.3s ease; // 动效时间和动画函数
+      &.visible {
+        max-height: 10rem;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      .name {
+        display: block;
+        width: 3rem;
+      }
+    }
+    .tagBox {
+      width: calc(100% - 5rem);
+      height: 100%;
+      line-height: 1.6rem;
+      .tag {
+        font-size: 14px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #19537d;
+        text-decoration: none;
+      }
+    }
+    .expandIcon {
+      margin-left: 20px;
+      margin-top: 6px;
+      font-size: 14px;
+      color: #19537d;
+      cursor: pointer;
+    }
+  }
+}

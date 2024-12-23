@@ -25,6 +25,7 @@ interface IProps {
 }
 
 const Article: NextPage<IProps> = ({ article }) => {
+  console.log('hs---article', article);
   const t = useTranslations();
   const { setting } = useContext(GlobalContext);
   const passwdRef = useRef(null);

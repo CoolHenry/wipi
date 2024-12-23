@@ -1,0 +1,110 @@
+.wrapper {
+  position: relative;
+  height: auto;
+  padding: 16px 20px 10px;
+  clear: both;
+  background-color: #f0efe2;
+  color: #0f0f0f;
+  overflow: hidden;
+  margin-top: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  .prose {
+    .name {
+      font-size: 18px;
+    }
+    .origin {
+      font-size: 12px;
+      color: #65645f;
+      .author {
+        margin-right: 5px;
+      }
+    }
+    .cont {
+      font-size: 16px;
+      clear: both;
+      overflow: hidden;
+      margin-top: 10px;
+      line-height: 200%;
+      .hr {
+        height: 15px;
+        margin-top: 15px;
+        overflow: hidden;
+        border-top: 1px solid #dad9d1;
+      }
+      .yiText {
+        color: #518564;
+      }
+      .zhuText {
+        color: #af9100;
+      }
+      .pinyinContson {
+        clear: both;
+        overflow: hidden;
+        margin-top: 10px;
+        span {
+          line-height: 100%;
+          width: 39px;
+          text-align: center;
+          display: inline-block;
+        }
+        .pinyin {
+          clear: both;
+          line-height: 160%;
+          font-size: 12px;
+          font-weight: normal;
+          float: left;
+          width: 36px;
+        }
+        .hanzi {
+          clear: both;
+          margin-bottom: 10px;
+          text-align: center;
+          float: left;
+          font-size: 20px;
+          height: 36px;
+          width: 36px;
+          line-height: 36px;
+          text-align: center;
+          background: url(/assets/images/bigImgbk2.png) no-repeat 2px;
+          background-size: 32px 32px;
+          font-family: KaiTi;
+        }
+      }
+    }
+  }
+  .tools {
+    margin-top: 20px;
+    .toolsIcon {
+      width: 19px;
+      height: 19px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+  .tag {
+    height: auto;
+    clear: both;
+    border-top: 1px solid #dad9d1;
+    overflow: hidden;
+    margin-top: 15px;
+    padding-top: 10px;
+    .tagItem {
+      font-size: 12px;
+      color: #999999;
+      margin-right: 20px;
+    }
+  }
+  .yizhu {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    .yizhuIcon {
+      width: 25px;
+      height: 25px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+}
