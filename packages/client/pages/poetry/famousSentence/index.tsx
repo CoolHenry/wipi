@@ -2,11 +2,11 @@ import { NextPage } from 'next';
 import React, { useState } from 'react';
 
 import { Aside } from '@/components/Poetry/Aside';
-import { Prose } from '@/components/Poetry/Prose';
+import { FamousSentence } from '@/components/Poetry/FamousSentence';
 import { Recommend } from '@/components/Poetry/Recommend';
 import { PoetryLayout } from '@/layout/PoetryLayout';
 import { ArticleProvider } from '@/providers/article';
-import { mockAsideTags, mockRecommendTags } from '@/utils/mock';
+import { mockAsideTags, mockFamousSentence, mockRecommendTags } from '@/utils/mock';
 
 import style from './index.module.scss';
 
@@ -18,7 +18,7 @@ const FamousSentencePage: NextPage<IProps> = ({ article }) => {
   const Content = (
     <>
       <Recommend title="推荐名句" recommendTags={mockRecommendTags} />
-      <Prose />
+      <FamousSentence data={mockFamousSentence} />
     </>
   );
 

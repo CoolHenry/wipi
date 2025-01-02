@@ -1,10 +1,23 @@
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import cls from 'classnames';
+import { NextPage } from 'next';
 import React, { useState } from 'react';
 
 import style from './index.module.scss';
 
-export const Recommend = ({ title, recommendTags, isAbbreviate = false, getAbbreviateType }) => {
+interface IRecommendProps {
+  title: any;
+  recommendTags: any;
+  isAbbreviate?: boolean;
+  getAbbreviateType?: any; // 将 getAbbreviateType 标记为可选
+}
+
+export const Recommend: NextPage<IRecommendProps> = ({
+  title,
+  recommendTags,
+  isAbbreviate = false,
+  getAbbreviateType,
+}) => {
   const [abbreviateIndex, setAbbreviateIndex] = useState(1);
   const [tags, setTags] = useState(recommendTags);
   const handleExpand = (val, index) => {

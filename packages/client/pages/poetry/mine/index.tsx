@@ -3,7 +3,7 @@ import { default as Router } from 'next/router';
 import React, { useState } from 'react';
 
 import { Aside } from '@/components/Poetry/Aside';
-import { Prose } from '@/components/Poetry/Prose';
+import { Mine } from '@/components/Poetry/Mine';
 import { PoetryLayout } from '@/layout/PoetryLayout';
 import { ArticleProvider } from '@/providers/article';
 
@@ -14,32 +14,14 @@ interface IProps {
 }
 
 const MinePage: NextPage<IProps> = ({ article }) => {
-  const [tags, setTags] = useState([
-    { label: '唐诗三百', href: 'www.baidu.com' },
-    { label: '唐诗三百', href: 'www.baidu.com' },
-    { label: '唐诗三百', href: 'www.baidu.com' },
-    { label: '楚辞', href: 'www.baidu.com' },
-    { label: '唐诗三百', href: 'www.baidu.com' },
-    { label: '唐诗三百', href: 'www.baidu.com' },
-    { label: '咏物', href: 'www.baidu.com' },
-    { label: '唐诗三百', href: 'www.baidu.com' },
-    { label: '唐诗三百', href: 'www.baidu.com' },
-    { label: '唐诗三百', href: 'www.baidu.com' },
-    { label: '唐诗三百', href: 'www.baidu.com' },
-    { label: '唐诗三百', href: 'www.baidu.com' },
-  ]);
-
   const Content = (
     <>
-      <Prose />
+      <div className={style.mineWrap}>我的收藏</div>
+      <Mine />
     </>
   );
 
-  const RightNode = (
-    <>
-      <Aside title="诗文" tags={tags} />
-    </>
-  );
+  const RightNode = <></>;
 
   return (
     <PoetryLayout

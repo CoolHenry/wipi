@@ -10,9 +10,9 @@ export const FamousSentence = ({ data }) => {
         data.map((e, i) => {
           return (
             <div key={i} className={style.sec}>
-              <span className={style.dot}>·</span>
-              <span className={style.name}>{e.name}</span>
-              <span className={style.dynasty}>({e.dynasty})</span>
+              <span className={style.name}>{e.sentence}</span>
+              <span className={style.line}>——</span>
+              <span className={style.title}>{e.title}</span>
             </div>
           );
         })}
